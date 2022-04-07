@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container id="main-container" className="d-grid h-100">
+      <Form id="sign-in-form" className="text-center w-100">
+        <img className="bootstrap-logo" 
+              src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" 
+              alt="Bootstrap 5" />
+        <h1>Please sign in</h1>
+      </Form>
+    </Container>
   );
 }
 
