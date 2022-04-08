@@ -4,7 +4,11 @@
 body {
     display:grid;
     background: #F5F5F5;
-    min-height: 100vh;
+    min-height: 100vh; /* view port height*/
+}
+
+.form-control:focus{
+    z-index: 5;
 }
 
 #sign-in-form{
